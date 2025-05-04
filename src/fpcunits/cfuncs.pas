@@ -60,6 +60,12 @@ const
     O_APPEND = 8;
 (*$endif *)
     
+(*$ifdef WINDOWS *)
+    O_CREAT = 512;
+    O_TRUNC = 1024;
+    O_APPEND = 8;
+(*$endif *)
+
     SEEK_SET = 0;
     SEEK_CUR = 1;
     SEEK_END = 2;

@@ -1,4 +1,5 @@
 #!/bin/bash
+
 rm -f bin/ti99 bin/emul99 bin/ucsddskman
 
 if [[ "$(uname)" == "Darwin" ]]; then

@@ -1,0 +1,9 @@
+#!/bin/bash
+BASE=/mnt/emu/GitHub
+${BASE}/emul99/bin/emul99 ${BASE}/emul99/bin/exbasic.cfg disksim_dir=${BASE}/diskfiles key_input=/tmp/emul_in &
+sleep 3
+echo 1$'\xfb\x0a'2>/tmp/emul_in
+sleep 4
+echo OLD DSK0.$1>/tmp/emul_in
+sleep 3
+echo RUN>/tmp/emul_in
